@@ -1,0 +1,70 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> subscription
+  </title>
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+</head>
+<body>
+<div class="container">
+  <div class="card login-form">
+    <div class="card-header">
+      <h1>Subscription</h1>
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="mb-2">
+          <label>name</label>
+          <input type="text" class="form-control" placeholder="Enter name">
+        </div>
+        <div class="mb-2">
+          <label>fiscal code</label>
+          <input type="text" class="form-control" placeholder="Enter fiscal code">
+        </div>
+        <div class="mb-2">
+          <label>email</label>
+          <input type="email" class="form-control" placeholder="Enter email">
+        </div>
+        <div class="mb-2">
+          <label>first address</label>
+          <input type="text" class="form-control" placeholder="Enter address 1">
+        </div>
+        <div class="mb-2">
+          <label>second address</label>
+          <input type="text" class="form-control" placeholder="Enter address 2">
+        </div>
+        <div class="mb-2">
+          <label>city</label>
+          <input type="text" class="form-control" placeholder="Enter city">
+        </div>
+        <div class="mb-2">
+          <label>postal code</label>
+          <input type="text" class="form-control" placeholder="Enter postal code">
+        </div>
+        <div class="mb-2">
+          <label>country</label>
+          <input type="text" class="form-control" placeholder="Enter country">
+        </div>
+        <div class="mb-2">
+          <label>password</label>
+          <input type="password" class="form-control" placeholder="Enter password">
+        </div>
+        <div class="mb-2">
+          <label>confirm password</label>
+          <input type="password" class="form-control" placeholder="Enter password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        <div class="sign-up">
+          I have an account? <a [routerLink] = "['/login']">login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
