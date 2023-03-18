@@ -1,0 +1,70 @@
+<div class="row m-2 custom-border">
+  <div class="col-md-1">
+    <div class="custom-border-right p-1 text-lg-center">
+      <img src="favicon.ico" alt="#">
+    </div>
+  </div>
+  <div class="col-md-5 custom-border-right">
+    <div class="col">
+      <div class="row">
+        <div class="col-md-1">
+          <fa-icon [icon]="faInfo" class="blue-color"></fa-icon>
+        </div>
+        <div class="col-md-11">Nom</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <fa-icon [icon]="faInfo" class="blue-color"></fa-icon>
+        </div>
+        <div class="col-md-11">Prenom</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <fa-icon [icon]="faPhone" class="blue-color"></fa-icon>
+        </div>
+        <div class="col-md-11">00352 691 343 456</div>
+      </div>
+    </div>
+  </div>
+
+  <!--  detail commande-->
+  <div class="col-md-3 custom-border-right">
+    <div class="col">
+      <div class="row">
+        <div class="col-md-1">
+          <fa-icon [icon]="faQrcode" class="blue-color"></fa-icon>
+        </div>
+        <div class="col-md-11">CMD-263548475</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <fa-icon [icon]="faCalendarDays" class="blue-color"></fa-icon>
+        </div>
+        <div class="col-md-11">17.03.2023</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <fa-icon [icon]="faShoppingCart" class="blue-color"></fa-icon>
+        </div>
+        <div class="col-md-11">LIVREE</div>
+      </div>
+    </div>
+  </div>
+  <!--  bouton action-->
+  <div class="col-md-3 custom-border-right">
+    <div class="row text-center">
+      <div class="col-md-6">
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <fa-icon [icon]="faPencil" class="blue-color"></fa-icon>&nbsp;
+          Modifier
+        </button>
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <fa-icon [icon]="faTrashCan" class="blue-color"></fa-icon>&nbsp;
+          Supprimer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

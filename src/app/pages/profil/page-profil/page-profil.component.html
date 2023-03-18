@@ -1,0 +1,47 @@
+<div class="row m-3">
+  <div class="col-md-5 text-center m-1 custom-border">
+    <div class="col">
+      <div class="mb-3 mt-2" >
+        <img src="favicon.ico" alt="#" class="rounded-circle" width="150px" height="150px">
+      </div>
+      <div>
+        <h2>Nom Prenom</h2>
+        <small class="form-text text-muted">Adresse Ville 13245</small>
+      </div>
+      <div class="m-2">
+        <button type="button" class="btn btn-primary m-1" (click)="modifierProfil()"><fa-icon [icon]="faEdit">d</fa-icon>&nbsp;Modifier le profil</button>
+        <a [routerLink]="['/changerMotDePasse']">
+          <button type="button" class="btn btn-warning m-1"><fa-icon [icon]="faLock"></fa-icon>&nbsp;Changer mot de passe</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 m-1 p-5 custom-border">
+    <table class="table">
+      <tbody>
+      <tr>
+        <th scope="row">Nom complet</th>
+        <td>Nom Prenom</td>
+      </tr>
+      <tr>
+        <th scope="row">Email</th>
+        <td>adresse@emial.com</td>
+      </tr>
+      <tr>
+        <th scope="row">Telephone</th>
+        <td colspan="2">00352 673 764 678</td>
+      </tr>
+      <tr>
+        <th scope="row">Adresse</th>
+        <td colspan="2">Adresse, ville, 345645</td>
+      </tr>
+      <tr>
+        <th scope="row">Entreprise</th>
+        <td colspan="2">Nom entreprise</td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>

@@ -1,0 +1,47 @@
+<div class="col">
+  <div class="col-md-12 mb-3">
+    <img src="favicon.ico" alt="" class="rounded-circle" width="200px" height="200px">
+  </div>
+  <div class="col-md-12 custom-border">
+    <div class="col-md-12 mb-4">
+      <h2 class="blue-color">
+        <fa-icon [icon]="faInfo"></fa-icon>&nbsp; Information de l'article
+      </h2>
+    </div>
+    <div class="col-md-12 p-2">
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Code article" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Designation" aria-label="Last name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Prix unitaire HT" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Taux TVA" aria-label="Last name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Prix unitaire TTC" aria-label="First name">
+        </div>
+        <div class="col">
+          <select class="form-select" id="autoSizingSelect">
+            <option selected>Selectionner une categorie</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 text-lg-end p-2">
+    <button class="btn btn-danger" (click)="cancel()"><fa-icon [icon]="faBan"></fa-icon>&nbsp;Annuler</button>&nbsp;
+    <button class="btn btn-primary"><fa-icon [icon]="faSave"></fa-icon>&nbsp;Enregister</button>
+  </div>
+</div>

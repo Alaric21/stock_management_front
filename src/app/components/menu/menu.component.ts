@@ -3,7 +3,6 @@ import {MenuList} from "./menu-list";
 import {Router} from "@angular/router";
 import {faUserTie,faChartLine, faChartColumn,faShoppingBag, faPeopleCarryBox ,faPersonChalkboard, faPersonWalkingLuggage, faUser,faGear} from '@fortawesome/free-solid-svg-icons';
 import {faWpexplorer, faElementor } from '@fortawesome/free-brands-svg-icons';
-import {} from '@fortawesome/free-regular-svg-icons';
 
 
 @Component({
@@ -71,14 +70,14 @@ export class MenuComponent implements OnInit{
       sousMenu:[
         {
           id:'31',
-          title: 'Client',
+          title: 'Clients',
           icon: this.faPersonChalkboard,
-          url:''
+          url:'clients'
         },{
           id:'32',
-          title: 'Commande Clients',
+          title: 'Commandes Clients',
           icon: this.faPersonWalkingLuggage,
-          url:''
+          url:'commandesClient'
         }
 
       ]
@@ -91,14 +90,14 @@ export class MenuComponent implements OnInit{
       sousMenu:[
         {
           id:'41',
-          title: 'Fournisseur',
+          title: 'Fournisseurs',
           icon: this.faUser,
-          url:''
+          url:'fournisseurs'
         },{
           id:'42',
-          title: 'Commande Fournisseurs',
+          title: 'Commandes Fournisseurs',
           icon: this.faPersonWalkingLuggage,
-          url:''
+          url:'commandesFournisseur'
         }
       ]
     },
@@ -112,12 +111,12 @@ export class MenuComponent implements OnInit{
           id:'51',
           title: 'Categories',
           icon: this.faElementor,
-          url:''
+          url:'categories'
         },{
           id:'52',
           title: 'Utilisateurs',
           icon: this.faUserTie ,
-          url:''
+          url:'utilisateurs'
         }
 
       ]
@@ -133,6 +132,16 @@ export class MenuComponent implements OnInit{
     this.router.navigate([url])
   }
 
+ /* private lastselectedMenu : MenuList | undefined;
+  navigate(menu: MenuList) : void {
+
+    if (this.lastselectedMenu) {
+      this.lastselectedMenu.active = false;
+    }
+    menu.active = true;
+    this.lastselectedMenu = menu;
+    this.router.navigate([menu.url]);
+  }*/
   ngOnInit(): void {
   }
 }

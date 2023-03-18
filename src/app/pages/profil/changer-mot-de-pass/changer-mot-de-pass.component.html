@@ -1,0 +1,30 @@
+<div class="row m-3">
+  <div class="col-md-5 text-center m-1 custom-border">
+    <div class="col">
+      <div class="mb-3 mt-2" >
+        <img src="favicon.ico" alt="#" class="rounded-circle" width="150px" height="150px">
+      </div>
+      <div>
+        <h2>Nom Prenom</h2>
+        <small class="form-text text-muted">Adresse Ville 13245</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 m-1 p-5 custom-border">
+    <form>
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Ancien mot de passe">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Nouveau mot de passe">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Confirmer mot de passe">
+      </div>
+    </form>
+  </div>
+</div>
+<div class="col-md-11 text-lg-end p-2">
+  <button class="btn btn-danger" (click)="cancel()"><fa-icon [icon]="faBan"></fa-icon>&nbsp;Annuler</button>&nbsp;
+  <button class="btn btn-primary"><fa-icon [icon]="faSave"></fa-icon>&nbsp;Enregister</button>
+</div>
